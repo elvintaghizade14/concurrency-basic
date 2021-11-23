@@ -1,0 +1,8 @@
+You can submit tasks to an ExecutorService instance multiple ways. The first method we
+presented, execute(), is inherited from the Executor interface, which the ExecutorService
+interface extends. The "execute()" method takes a Runnable lambda expression or instance
+and completes the task asynchronously. Because the return type of the method is void, it
+does not tell us anything about the result of the task. It is considered a “fire-and-forget”
+method, as once it is submitted, the results are not directly available to the calling thread.
+Unlike execute(), though, submit() returns a Future object that can be used to determine if the
+task is complete. It can also be used to return a generic result object after the task has been completed.
