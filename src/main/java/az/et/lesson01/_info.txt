@@ -1,0 +1,7 @@
+Creating Threads with the ExecutorService.
+You first obtain an instance of an ExecutorService interface,
+and then you send the service tasks to be processed. The framework
+includes numerous useful features, such as thread pooling and scheduling,
+which would be cumbersome for you to implement in every project.
+Therefore, it is recommended that you use this framework anytime
+you need to create and execute a separate task, even if you need only a single thread.
