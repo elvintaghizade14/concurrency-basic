@@ -1,0 +1,7 @@
+Callable for short, which is similar to Runnable except that its call() method
+returns a value and can throw a checked exception. From the definition of Runnable,
+the run() method returns void and cannot throw any checked exceptions.
+The Callable interface was introduced as an alternative to the Runnable interface,
+since it allows more details to be retrieved easily from the task after it is completed.
+The ExecutorService includes an overloaded version of the "submit()" method that takes a
+Callable object and returns a generic Future<T> object.
