@@ -1,0 +1,5 @@
+The difference between a single-thread and a pooled-thread executor is what happens
+when a task is already running. While a single-thread executor will wait for an available
+thread to become available before running the next task, a pooled-thread executor can
+execute the next task concurrently. If the pool runs out of available threads, the task will be
+queued by the thread executor and wait to be completed.
