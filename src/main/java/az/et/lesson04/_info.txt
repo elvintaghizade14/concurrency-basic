@@ -1,0 +1,4 @@
+If you know at the time of creation that your object requires synchronization,
+then you should use one of the concurrent collection classes. On the other hand,
+if you are given an existing collection that is not a concurrent class and need to access
+it among multiple threads, you can wrap it using synchronized collections methods.
